@@ -1,0 +1,38 @@
+.navbar {
+    background-color: var(--card_bg);
+}
+.menus {
+    color: var(--text_color);
+    cursor: pointer;
+    transition: 0.3s all ease;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 40px;
+}
+.menu_icon {
+    transform: translateY(10px);
+    opacity: 0;
+    transition: 0.5s all ease;
+    font-size: 16px;
+    background-color: var(--bg_color);
+    padding: 0px;
+    border-radius: 50%;
+}
+.menu_name {
+    transform: translateY(-10px);
+    transition: 0.5s all ease;
+}
+
+.menus:hover .menu_icon {
+    transform: translateY(0);
+    opacity: 1;
+    font-size: 20px;
+    padding: 6px;
+}
+.menus:hover .menu_name {
+    transform: translateY(-4px);
+    opacity: 1;
+}
