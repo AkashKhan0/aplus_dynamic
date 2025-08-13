@@ -20,7 +20,7 @@ const Home = () => {
           consequatur eum. Eius, fugiat delectus doloribus repudiandae
           laudantium commodi sint quaerat ducimus ad quasi
         </p>
-        <p className="text-red-50 py-20">Kausar code</p>
+        <p className="text-red-700 py-20">Kausar code</p>
       </div>
     </div>
   );
