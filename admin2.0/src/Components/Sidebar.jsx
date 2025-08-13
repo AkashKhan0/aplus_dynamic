@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const Sidebar = () => {
   return (
     <div>
-        <div className="">Left bar</div>
+      <div className="w-full flex flex-col gap-2">
+        <h1>items</h1>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;
