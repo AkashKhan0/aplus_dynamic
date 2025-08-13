@@ -11,12 +11,12 @@ const App = () => {
         <div className="w-full max-w-[1440px] flex justify-between">
 
           {/* left side bar */}
-          <div className="left w-[25%] h-screen overflow-y-scroll border">
+          <div className="left w-[25%] h-screen overflow-y-scroll bg-slate-300">
             <Sidebar />
           </div>
 
           {/* right content bar */}
-          <div className="right w-[75%] border">
+          <div className="right w-[75%] h-full min-h-screen bg-slate-400 p-5">
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/project" element={<Project />} />
