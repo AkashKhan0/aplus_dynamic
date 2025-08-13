@@ -5,6 +5,7 @@ import Owl1 from "../../assets/owl1.png";
 import Morning_bird from "../../assets/morning_bird.png";
 import bg_owl from "../../assets/owl.png";
 import moon from "../../assets/moon.png";
+import house from "../../assets/house1.png";
 import sun from "../../assets/sun.png";
 import cloud from "../../assets/cloud.png";
 import cloud1 from "../../assets/cloud1.png";
@@ -17,6 +18,8 @@ import {
   FaProjectDiagram,
   FaBlog,
 } from "react-icons/fa";
+import Fireflies from "../Fireflies";
+import "../Fireflies.css";
 
 const menuItems = [
   { path: "/", name: "home", icon: <FaHome /> },
@@ -46,6 +49,8 @@ const Navbar = () => {
 
   return (
     <div>
+      {theme === "dark" && <Fireflies />}
+
       {/* background image night */}
       <div
         className={`fixed bottom-0 left-0 -z-[1] ${
@@ -63,6 +68,14 @@ const Navbar = () => {
         }`}
       >
         <img src={moon} alt="" className="w-[70px]" />
+      </div>
+      {/* house */}
+      <div
+        className={`fixed top-[37%] left-[7%] -z-[1] ${
+          theme === "dark" ? "opacity-5" : "opacity-0"
+        }`}
+      >
+        <img src={house} alt="" className="w-[200px]" />
       </div>
       {/* sun */}
       <div
@@ -103,7 +116,7 @@ const Navbar = () => {
           theme === "light" ? "opacity-40" : "opacity-0 hidden"
         }`}
       >
-        <img src={bg_bird} alt=""className="h-[300px]"/>
+        <img src={bg_bird} alt="" className="h-[300px]" />
       </div>
 
       <div className="navbar fixed bottom-0 left-0 w-full h-[50px] flex items-center justify-center py-7 gap-3">
