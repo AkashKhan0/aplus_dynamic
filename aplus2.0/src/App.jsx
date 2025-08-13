@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
 import Lenis from "@studio-freight/lenis";
-import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Navbar from "./components/navbar/Navbar";
-import Footer from "./components/footer/Footer";
+import { useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import Fireflies from "./components/Fireflies";
+import Footer from "./components/footer/Footer";
+import Navbar from "./components/navbar/Navbar";
+import Home from "./pages/Home";
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -40,7 +40,6 @@ const App = () => {
 
   return (
     <div>
-      
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <Footer />
       {theme === "dark" && <Fireflies />}
@@ -48,7 +47,10 @@ const App = () => {
 
       <div className="universal">
         <Routes>
-          <Route path="/" element={<Home theme={theme} toggleTheme={toggleTheme}/>} />
+          <Route
+            path="/"
+            element={<Home theme={theme} toggleTheme={toggleTheme} />}
+          />
         </Routes>
       </div>
     </div>
