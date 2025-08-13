@@ -1,7 +1,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Sidebar from "./Components/Sidebar";
-import Contentbar from "./Components/Contentbar";
+import Dashboard from "./Components/content_component/Dashboard";
+import Project from "./Components/content_component/Project";
 
 const App = () => {
   return (
@@ -17,7 +18,8 @@ const App = () => {
           {/* right content bar */}
           <div className="right w-[75%] border">
             <Routes>
-              <Route path="/" element={<Contentbar />} />
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/project" element={<Project />} />
             </Routes>
           </div>
         </div>
