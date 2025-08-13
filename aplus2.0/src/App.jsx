@@ -4,7 +4,6 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
-import Fireflies from "./components/Fireflies";
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -15,7 +14,6 @@ const App = () => {
     localStorage.setItem("theme", newTheme);
     document.documentElement.classList.remove("light", "dark");
     document.documentElement.classList.add(newTheme);
-    // window.location.reload();
   };
 
   useEffect(() => {
@@ -43,8 +41,6 @@ const App = () => {
       
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <Footer />
-      {theme === "dark" && <Fireflies />}
-      {/* {theme === "dark" && <LampLights />} */}
 
       <div className="universal">
         <Routes>

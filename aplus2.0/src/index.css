@@ -37,13 +37,13 @@ html.light {
 }
 
 html.dark {
-  --bg_color: #121212;
+  --bg_color: #201F21;
   --title_color: #708238;
   --text_color: #F5F5F5;
   --text2_color: #B0B0B0;
   --btn: #E63946;
   --btn_text: #FFFFFF;
-  --card_bg: #1E1E1E;
+  --card_bg: #52454E;
   --border: #2A2A2A;
 }
 
