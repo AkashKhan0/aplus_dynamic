@@ -5,7 +5,6 @@ const Sidebar = () => {
   return (
     <div>
       <div className="w-full h-full flex flex-col gap-2 p-5">
-
         {/* dashboard */}
         <div className="bg-slate-400 p-2 rounded-md">
           <NavLink to={"/"}>
@@ -19,7 +18,11 @@ const Sidebar = () => {
             <p>Project list</p>
           </NavLink>
         </div>
-
+        <div className="bg-slate-400 p-2 rounded-md">
+          <NavLink to={"/team"}>
+            <p>Team Member</p>
+          </NavLink>
+        </div>
       </div>
     </div>
   );
